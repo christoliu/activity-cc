@@ -1,0 +1,25 @@
+PHPExcel 是一個用來讀、寫、操作Excel的PHP函式庫
+支援最新的xlsx也就是 excel 2007 的檔案
+
+安裝的方法很簡單
+就解壓所以後 把函式庫的部分 丟進PHP的資料夾就行了
+只是 有幾個需求要注意 
+原始說明文件上面說
+
+Requirements
+------------
+The following requirements should be met prior to using PHPExcel:
+* PHP version 5.2 or higher
+* PHP extension php_zip enabled
+* PHP extension php_xml enabled
+
+至於上面兩個 就是 去修改php.ini
+把 下面兩行的;註解拿掉就行了
+extension=php_zip.dll
+extension=php_xmlrpc.dll
+
+接著重開伺服器!!! done!!
+
+就可以開始測試了~
+它建議路徑這樣設定
+set_include_path(get_include_path() . PATH_SEPARATOR . '/path/to/PHPExcel/');

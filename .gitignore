@@ -1,0 +1,7 @@
+export/
+uploads/
+*.docx
+*.doc
+*.xlsx
+portal/config.php
+db.php
